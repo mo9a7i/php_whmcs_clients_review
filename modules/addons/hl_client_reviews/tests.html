@@ -24,76 +24,53 @@
 		<div class="row">
 			<div class="col-md-12">
 				<div class="page-header">
-					<h1>55 Reviews <small>(34 pending)</small></h1>
+					<h4>رأيك يهمنا <small>(اكتب رأيك أو قم بتحديث رأيك من الفورم بالأسفل)</small></h4>
 				</div>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-md-12">
 				<div class="alert alert-success alert-dismissible" role="alert">
-					<strong>Success!</strong> Review Approved Successfully.
+					<strong>شكراً!</strong> لقد تم تسجيل رأيك بنجاح.
+				</div>
+				
+				<div class="alert alert-warning alert-dismissible" role="alert">
+					<strong>تم!</strong> تم تحديث رأيك بنجاح.
 				</div>
 				
 				<div class="alert alert-danger alert-dismissible" role="alert">
-					<strong>Done!</strong> Review was deleted from database.
+					<strong>تم!</strong> تم مسح رأيك بنجاح.
 				</div>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-md-12">
-				<table class="table">
-					<thead>
-						<tr>
-							<th class="col-md-1">#</th>
-							<th  class="col-md-2">Client Name</th>
-							<th  class="col-md-2">Date Added</th>
-							<th  class="col-md-5">Review</th>
-							<th  class="col-md-2">Action</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<th scope="row">1</th>
-							<td>Mark</td>
-							<td>Otto</td>
-							<td>@mdo</td>
-							<td>
-								<a class="btn btn-default btn-success btn-xs" href="#" role="button">Approve</a>
-								<a class="btn btn-default btn-xs" href="#" role="button">Edit</a>
-								<a class="btn btn-default btn-danger btn-xs" href="#" role="button">Delete</a>
-							</td>
-						</tr>
-						<tr class="danger">
-							<th scope="row">1</th>
-							<td>Mark</td>
-							<td>Otto</td>
-							<td>@mdo</td>
-							<td>
-								<a class="btn btn-default btn-success btn-xs" href="#" role="button">Approve</a>
-								<a class="btn btn-default btn-xs" href="#" role="button">Edit</a>
-								<a class="btn btn-default btn-danger btn-xs" href="#" role="button">Delete</a>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row">1</th>
-							<td>Mark</td>
-							<td>Otto</td>
-							<td>@mdo</td>
-							<td>
-								<a class="btn btn-default btn-success btn-xs" href="#" role="button">Approve</a>
-								<a class="btn btn-default btn-xs" href="#" role="button">Edit</a>
-								<a class="btn btn-default btn-danger btn-xs" href="#" role="button">Delete</a>
-							</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-		</div>
-		
-		<div class="row">
-			<div class="col-md-12">
-				<hr />
-				<p class="pull-right">Developed by <a href="http://www.hl.net.sa">Hardlayers</a> 2017</p>
+				<form>
+					<div class="form-group">
+						<label for="hl_client_review_text">رأيك بالخدمة بشكل عام</label>
+						<textarea id="hl_client_review_text" placeholder="إبدأ من هنا" class="form-control input-lg" rows="5"></textarea>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox">هل تسمح بعرض إسمك الأخير؟
+						</label>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox">هل تسمح بعرض بريدك الإلكتروني؟
+						</label>
+					</div>
+					<div class="row">
+						<div class="col-xs-6">
+							<input class="btn btn-default btn-block" type="submit" name="add" value="إضافة">
+						</div>
+						<div class="col-xs-6">
+							<input class="btn btn-primary btn-block" type="submit" name="delete" value="مسح">
+						</div>
+						
+						
+					</div>
+				</form>
 			</div>
 		</div>
 	</div>
